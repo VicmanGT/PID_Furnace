@@ -87,3 +87,11 @@ void USART1_IRQHandler(void)
         USART1->ICR |= USART_ICR_ORECF; // Clear overrun error flag
     }
 }
+
+void SendUsart(int value){
+    char buffer[10];
+    sprintf(buffer, "%lu\n", value);
+    for (int i = 0; buffer[i] != '\0'; i++) {
+        USART_SendChar(buffer[i]);
+    }
+}

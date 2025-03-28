@@ -1,5 +1,6 @@
 #ifndef timers_H
 #define timers_H
+#include "timers.c"
 #include <stdint.h>
 void TIM16_IRQHandler(void);
 void TIM17_IRQHandler(void);

@@ -49,12 +49,6 @@ void ZeroCrossing(void);
 void delay_ms(uint32_t);
 void delay_us(uint32_t);
 
-
-
-
-
-
-
 int main(void)
 {
 	InitSystem();
